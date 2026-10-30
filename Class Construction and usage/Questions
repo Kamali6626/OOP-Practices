@@ -1,1 +1,79 @@
+Objectives:
+1.  To practice Class Construction and usage
+2.  To practice Operator Overloading (=, cout, cin, ==,…)
+
+Problem 1:
+Write a Name Class that stores the first name, middle initial and last name. The first and last names are stored as CString (null terminated character arrays) and middle initial is stored as a character. Write the code for the class, both specification and implementation, so that the following main program executes successfully.
+
+	void print(Name _name){
+		cout << “Inside doSomething “ << _name << endl;
+	}
+
+int main(){
+    Name name1(“Object”, ‘O’, “Programming”);
+    cout << name1 << endl;		//It prints Object O. Programming
+    print(name1);  
+    cout << name1 << endl;
+
+    return 0;
+}
+
+(Note: Write only the required functions. No extra function is allowed.)
+
+Problem 2:
+Extend the Name class written in Problem 1 so that the following main program executes successfully.
+
+	void print(Name _name){
+		cout << “Inside doSomething “ << _name << endl;
+	}
+
+int main(){
+    Name name1(“Object”, ‘O’, “Programming”);
+    cout << name1 << endl;		//It prints Object O. Programming
+    print(name1);  
+    cout << name1 << endl;
+   {
+ 	Name name2{};
+	name2 = name1;
+	cout << name2 << endl;
+   }
+    return 0;
+}
+ 
+(Note: Write only the required functions. Extra functions are not allowed..)
+
+Problem 3:
+Extend the Name class written in Problem 2 so that the following main program executes successfully.
+
+	void print(Name _name){
+		cout << “Inside doSomething “ << _name << endl;
+	}
+
+int main(){
+    Name name1(“Object”, ‘O’, “Programming”);
+    cout << name1 << endl;		//It prints Object O. Programming
+    print(name1);  
+    cout << name1 << endl;
+
+   {
+ 	Name name2{};
+	name2 = name1;
+	cout << name2 << endl;
+   }
+
+   Name name3{};
+   cin >> name3;
+   cout << name3 << endl;
+
+   if (name1 == name3)
+	cout << name1 << “is equal to “ << name3 << endl;
+   else 
+	cout << name1 << “is not equal to “ << name3 << endl;
+
+   	   
+    return 0;
+} 
+
+(Note: Write only the required functions. Extra functions are not allowed.)
+
 
