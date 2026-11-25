@@ -25,9 +25,6 @@ Derived2::Derived2(int x,int y,int z):Derived1(x,y) {
    c=z;
     cout<<"Derived2 Consturctor"<<endl;
 }
-Derived2::Derived2(const Derived2& obj){
-    
-}
 void Derived2::print() const{
     Derived1::print();
     cout<<"c = "<<c<<endl;
